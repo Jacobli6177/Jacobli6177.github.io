@@ -1,0 +1,83 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+p{
+font-family: 'Josefin Sans', sans-serif;
+  
+}
+h1,h2{
+ font-family: 'Edu VIC WA NT Beginner', cursive; 
+}
+.tips{
+  position:relative;
+  display:inline-block;
+  border-top:2px dotted blue;
+}
+.tips p{
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+}
+.tips:hover p{
+  visibility: visible;
+  top:0;
+  right:-800px; 
+}
+.test1{
+  white-space: nowrap;
+  width:10em;
+  height: 100px;
+  border: 2px double gray;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  word-wrap: break-word;
+}
+.test1:hover{
+  overflow: visible;
+  white-space: normal;
+  writing-mode: vertical-rl;
+  text-shadow: 1px 1px 2px blue, 0 0 25px yellow, 0 0 5px red;
+}
+.test2{
+  width:300px;
+  height: 100px;
+  background-color: pink;
+  border: 1empx dotted peachpuff;
+  transition: transform 5s, background-color 6s;
+  transition-delay: 1s;
+}
+.test2:hover{
+  transform: rotate3d(1,1,1,185deg);
+  background-color: yellow;
+}
+.test3{
+  width: 150px;
+  height: 150px;
+  background-color: blueviolet;
+  border: 3px dashed yellowgreen;
+  position:relative;
+  animation-name: barney;
+  animation-duration: 13s;
+}
+@keyframes barney{
+  0%{
+    background-color: blueviolet;
+    border: 3px dashed yellowgreen;
+    left:500px; top:500px;
+  }
+  25%{
+    background-color: black;
+    border: 3px dotted white;
+    left:200px; top:200px
+  }
+  50%{
+    background-color: white;
+    border: 3px dashed black;
+    left: 500px; top:-100px;
+  }
+  100%{
+    background-color:yellowgreen;
+    border:3px dashed blueviolet;
+    left:px; top:0px;
+}
