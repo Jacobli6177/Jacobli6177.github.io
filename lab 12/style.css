@@ -1,0 +1,47 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.bigbox{
+    height: 600px;
+    width: 600px;
+    background-color: antiquewhite;
+    border: 2px dotted blanchedalmond;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: bisque;
+
+}
+.image{
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px red solid;
+}
+.image2{
+    display: block;
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    background-color: green;
+       
+}
+.image2:hover {
+    display: none ;
+}
+.image3{
+    position: absolute;
+    top:350px;
+    left: 350px;
+    opacity: 0;
+}
+
+.image3:hover {
+    opacity: 1;
+    display: block;
+}
