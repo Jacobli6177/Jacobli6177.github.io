@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+  <img class="logo" src="image1.jpg" alt="logo">
+  <nav>
+      <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="game.html">Game</a></li>
+      </ul>
+  </nav>
+  <a class="cta" href="contact.html"><button>Contact</button></a>
+</header>
+<body>
+    <section class="contact">
+        <div class="content">
+          <h2>Contact Us</h2>
+          <p> Leave you message down below</p>
+        </div>
+          <div class="contactForm">
+            <form name="userform">
+              <h2>Send Message</h2>
+              <div class="inputBox">
+                <input type="text" id="user_name" name="input_username" required="required">
+                <span>Full Name</span>
+              </div>
+              <div class="inputBox">
+                <input type="text" id="user_email" name="input_useremail" required="required">
+                <span>Email</span>
+              </div>
+              <div class="inputBox">
+                <textarea required="required"></textarea>
+                <span>Type your Message...</span>
+              </div>
+              <div class="inputBox">
+                <input type="submit" name="" value="Send" onclick=" validateForm()">
+              </div>
+            </form>
+          </div>
+    
+      </section>
+ 
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script2.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</html>

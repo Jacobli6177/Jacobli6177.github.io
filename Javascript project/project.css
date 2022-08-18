@@ -1,0 +1,110 @@
+body{
+    background-color: bisque;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li, a ,button {
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10px;
+  }
+  .logo {
+    cursor: pointer;
+    order: 3;
+    margin-left: auto;
+  }
+  nav{
+    order: 1;
+  }
+  .nav__links {
+    list-style: none;
+  }
+  .nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  .nav__links li:nth-child(1){
+    padding: 0 20px 0 0;
+  }
+  .nav__links li a{
+    transition: all 0.3s ease 0s;
+  }
+  .nav__links li a:hover{
+    color: #0088a9;
+  }
+  .cta{
+    order: 2;
+  }
+  button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  button:hover {
+    background-color: rgba(0,136,169,0.8);
+  
+  }
+  img{
+    height: 100px;
+    width: 100px;
+  }
+/* ----------------------------------------Project -----------------------------*/
+h2{
+    text-align: center;
+    color: brown;
+}
+.float-container{
+    padding-left: 10%;
+    height: 700px;
+    width: 1200px;
+    margin-left: 20%;
+    margin-right: 2%;
+    background-color: darkgray;
+    margin-top: 3%;
+    background-size: cover;
+    
+}
+.float-child{
+    width: 40%;
+    height: 95%;
+    float: left;
+    padding: 10px;
+    margin-right: 5%;
+    background-color: aquamarine;
+    position: relative;
+    display: block;
+  
+}
+.float-container .float-child iframe{
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    background-size: cover;
+}
+.float-container .float-child p{
+    text-align: center;
+    color: blueviolet;
+}
+.iframe-link iframe {
+    display: none;
+}
+.iframe-link:hover iframe {
+    display: block;
+}
